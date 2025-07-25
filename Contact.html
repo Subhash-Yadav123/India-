@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" href="./assest/images/images.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./assest/css/vender/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+</head>
+
+<body class="contactbody">
+    <nav>
+        <img src="./assest/images/incre india/India_Logo-removebg-preview.png" class="logo" alt="Logo"
+            title="Incredible India">
+
+        <ul class="navbar">
+            <li>
+                <a href="index.html">Home</a>
+                <a href="index.html#Location">Locations</a>
+                <a href="Contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="contact">
+        <div class="contact-form">
+            <h1>Contact <span>Us</span></h1>
+            <p>We are always out there to help you! Fill out the form given below and get a reply from us within 2
+                business days.</p>
+            <form action="" onsubmit="return contactform()">
+                <input type="text" name="myname" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your E-mail" required>
+                <input type="text" name="subject" placeholder="Phone No." required>
+                <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Submit" class="submit-btn" id="sbt">
+            </form>
+        </div>
+
+    </section>
+
+    <section class="footer">
+        <div class="foot">
+            <div class="footer-content">
+
+                <div class="footlinks">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footlinks">
+                    <h4>Connect</h4>
+                    <div class="social">
+                       
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="end">
+            <p>Copyright © 2024 Incredible India.<br>Website developed by: All Team Members</p>
+        </div>
+    </section>
+
+</body>
+<script>
+    function contactform() {
+        var tel = document.getElementById("sbt").value;
+        alert("Submitted");
+    }
+</script>
+
+</html>
